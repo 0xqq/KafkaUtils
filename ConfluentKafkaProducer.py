@@ -26,7 +26,8 @@ class KafkaProducer():
             if err:
                 sys.stderr.write('Message failed delivery: %s\n' % err)
             else:
-                sys.stderr.write('Message delivered to %s partition[%d] @ %o\n' %(msg.topic(), msg.partition(), msg.offset()))
+                pass
+                # sys.stderr.write('Message delivered to %s partition[%d] @ %o\n' %(msg.topic(), msg.partition(), msg.offset()))
 
         try:
             # Produce value
