@@ -1,2 +1,2 @@
 # KafkaTest
-Python上使用kafka
+Python上使用confluent kafka
