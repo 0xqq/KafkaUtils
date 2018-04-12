@@ -16,8 +16,8 @@ producer.produceToKafka(topic, msg)
 from ConfluentKafkaConsumer import KafkaConsumer
 
 topics = ["test"]
-producer = KafkaConsumer("127.0.0.1", "9092", "consumer_group")
-messages = producer.consumeFromKafka(topics)
+consumer = KafkaConsumer("127.0.0.1", "9092", "consumer_group")
+messages = consumer.consumeFromKafka(topics)
 for msg in messages:
     print msg
 ```
