@@ -1,0 +1,21 @@
+
+broker: 127.0.0.1
+
+port: 9092
+
+# 需要消费的topic
+topics:
+  - first_topic
+  - second_topic
+
+# 生成文件位置
+output: /data/output
+
+# 消费组
+group: mutilConsume
+
+# 进程数<=topic_partition
+processes: 10
+
+# 生成文件的行号
+columns: 100000
