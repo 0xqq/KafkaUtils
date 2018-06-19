@@ -2,12 +2,15 @@
 
 #### Producer:
 ```python
+import time
 from ConfluentKafkaProducer import KafkaProducer
 
 topic = 'test'
 msg = 'This is a kafka message'
 producer = KafkaProducer("127.0.0.1", "9092")
-producer.produceToKafka(topic, msg)
+while True:
+    producer.produceToKafka(topic, msg)
+    time.sleep(1)
 ```
 
 
